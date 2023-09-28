@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Rutas de tipo petición
+/*Rutas de tipo petición
 Route::get('/', function () {
      return view('welcome');
 });
@@ -25,8 +25,8 @@ Route::get('/formulario', function () {
 Route::get('/recuerdos', function () {
     return view('recuerdos');
     });
-
+*/
 //Rutas de tipo view
-/* Route::view('/', 'welcome');
-Route::view('/formulario', 'formulario');
-Route::view('/recuerdos', 'recuerdos'); */
+Route::view('/', 'welcome')->name('ApodoInicio'); //nombrar a las rutas
+Route::view('/formulario', 'formulario')->name('ApodoFormulario');
+Route::view('/recuerdos', 'recuerdos')->name('ApodoRecuerdos');
